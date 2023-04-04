@@ -21,7 +21,7 @@ TOKEN = '6186634028:AAG7LygxmgPKMNUgfXFnbsc7hwdNTz8eu2s'
 "https://api.telegram.org/bot6186634028:AAG7LygxmgPKMNUgfXFnbsc7hwdNTz8eu2s/getUpdates"
 
 #Webhook
-"https://api.telegram.org/bot6186634028:AAG7LygxmgPKMNUgfXFnbsc7hwdNTz8eu2s/setWebook?url=https://rossmann-telegram-bot-8o6m.onrender.com"
+"https://api.telegram.org/bot6186634028:AAG7LygxmgPKMNUgfXFnbsc7hwdNTz8eu2s/setWebhook?url=https://rossmann-telegram-bot-8o6m.onrender.com"
 
 #send message
 
