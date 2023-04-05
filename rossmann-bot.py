@@ -68,7 +68,7 @@ def load_dataset(store_id):
     #API Call
 def predict(data):
     url = 'https://rossmann-sales-prediction-a2rd.onrender.com/rossmann/predict'
-    header =  {'Content-type': 'application/json'}
+    header = {'Content-type': 'application/json'}
     data = data
 
     r = requests.post(url, data=data, headers = header )
@@ -117,10 +117,7 @@ def index():
             if data != 'error':
                 #prediction
                 d1 = predict(data)
-
-                #prediction
-                d1 = predict(data)
-
+                
                 #calculation
                 d2 = d1[['store', 'prediction']].groupby('store').sum().reset_index()
 
@@ -128,8 +125,7 @@ def index():
                 msg = 'Store Number {} will sell R${:,.2f} in the next 6 weeks'.format(
                 d2['store'].values[0], d2['prediction'].values[0])
                 #eu quero só a primeira parte dessas series.
-
-                #send message
+                
                 send_message(chat_id, msg)
                 return Response('Ok', status=200)
 
