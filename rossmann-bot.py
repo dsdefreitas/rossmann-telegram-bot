@@ -93,7 +93,6 @@ def parse_message(message):
         store_id = int(store_id)
 
     except ValueError:
-        send_message(chat_id, 'Store ID is Wrong')
         store_id = 'error'
 
     return chat_id, store_id
@@ -132,7 +131,7 @@ def index():
                 return Response('Ok', status=200)
 
             else:
-                send_message(chat_id, 'Store Id is Wrong')
+                send_message(chat_id, 'Store not available')
                 return Response('Ok', status = 200)
         #essa é uma mensagem pro api falando que você conseguiu enviar mensagem.
         #se esquecer de passar status 200, a api fica rodando infinitamente pq
