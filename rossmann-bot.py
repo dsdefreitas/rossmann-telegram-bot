@@ -63,7 +63,7 @@ def load_dataset(store_id):
     else:
         data = 'error'
 
-        return data
+    return data
 
     #API Call
 def predict(data):
