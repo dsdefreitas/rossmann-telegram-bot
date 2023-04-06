@@ -104,6 +104,8 @@ def parse_message(message):
 app = Flask(__name__)
 
 @app.route('/', methods = ['GET', 'POST'])
+#vai colocar um endpoint na raiz mesmo, e vou permitir dois métodos, método GET e método POST. 
+#função index vai rodar sempre que o endpoint root for acionado passando um dado.
 def index():
     if request.method == 'POST':
         message = request.get_json()
